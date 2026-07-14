@@ -1,6 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "rewrites": [
+    { "source": "/films/:path*", "destination": "/versions/website-v2/films/:path*" }
+  ],
   "headers": [
     {
       "source": "/versions/(.*)\\.(mp4|webp|png)",
