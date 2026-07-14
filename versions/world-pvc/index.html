@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Oppr — walk the plant that understands itself</title>
+  <meta name="description" content="Scroll to walk a PVC pipe plant where every voice note, photo and sensor becomes one living picture of the operation." />
+  <style>
+    :root, .sw-root {
+      --sw-bg: #F4F2EE;          /* == the scene background colour */
+      --sw-ink: #1C1F23;
+      --sw-ink-soft: #6B675F;
+      --sw-accent: #FF6A2B;      /* per-section accents override this at runtime */
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world">
+    <!-- Static SEO copy: the only crawlable text on the page. Hidden by the engine on mount. -->
+    <section data-sw-seo>
+      <h1>The plant that understands itself.</h1>
+      <p>Oppr turns every voice note, photo and sensor reading on your factory floor into one living, linked picture of the operation — walk the line and watch it happen.</p>
+      <h2>Capture — It starts with a voice.</h2>
+      <p>A batch label photographed, an observation spoken — structured data the moment they happen.</p>
+      <h2>Every signal — Machines talk. So does your team.</h2>
+      <p>Sensor data and human observations flow into one stream — even from your oldest machine.</p>
+      <h2>Traceable — The pipe is finished. The knowledge isn't.</h2>
+      <p>Every run leaves a connected trail of what happened and why.</p>
+      <h2>Understand — One living picture of your plant.</h2>
+      <p>Material, machine, moment — linked. Ask a question, get a cited answer.</p>
+      <h2>Execute — See your whole operation.</h2>
+      <p>New understanding becomes the new standard — on the floor, next shift.</p>
+      <p><a href="https://oppr.ai">Book the 10-Week Proof</a> · <a href="https://oppr.ai">See how it works</a></p>
+    </section>
+  </div>
+
+  <script src="scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'Oppr', href: '#top' },
+      cta: { label: 'Book the 10-Week Proof', href: 'https://oppr.ai' },
+      hint: 'scroll to walk the line',
+      diveScroll: 1.3,
+      crossfade: 0.18,
+      sections: [
+        {
+          id: 'intake', label: 'Intake',
+          still: 'assets/intake.webp',
+          poster: 'assets/intake-poster.webp',
+          clip: 'assets/vid/intake.mp4',
+          clipMobile: 'assets/vid/intake-m.mp4',
+          posterMobile: 'assets/intake-poster-m.webp',
+          accent: '#FF6A2B',
+          eyebrow: 'Capture',
+          title: 'It starts with a voice.',
+          body: 'A batch label photographed, an observation spoken — structured data the moment they happen.',
+          tags: ['Voice', 'Photos', 'Forms'],
+        },
+        {
+          id: 'line', label: 'The Line',
+          still: 'assets/capture.webp',
+          poster: 'assets/capture-poster.webp',
+          clip: 'assets/vid/capture.mp4',
+          clipMobile: 'assets/vid/capture-m.mp4',
+          posterMobile: 'assets/capture-poster-m.webp',
+          accent: '#3D9BE9',
+          scroll: 1.6, linger: 0.45,
+          eyebrow: 'Every signal',
+          title: 'Machines talk. So does your team.',
+          body: 'Sensor data and human observations flow into one stream — even from your oldest machine.',
+          tags: ['OCR on HMIs', 'Sensors'],
+        },
+        {
+          id: 'finish', label: 'End of Line',
+          still: 'assets/finish.webp',
+          poster: 'assets/finish-poster.webp',
+          clip: 'assets/vid/finish.mp4',
+          clipMobile: 'assets/vid/finish-m.mp4',
+          posterMobile: 'assets/finish-poster-m.webp',
+          accent: '#FF6A2B',
+          eyebrow: 'Traceable',
+          title: "The pipe is finished. The knowledge isn't.",
+          body: 'Every run leaves a connected trail of what happened and why.',
+          tags: ['Quality photos', 'Run history'],
+        },
+        {
+          id: 'office', label: 'Understanding',
+          still: 'assets/office.webp',
+          poster: 'assets/office-poster.webp',
+          clip: 'assets/vid/office.mp4',
+          clipMobile: 'assets/vid/office-m.mp4',
+          posterMobile: 'assets/office-poster-m.webp',
+          accent: '#3D9BE9',
+          scroll: 1.8, linger: 0.5,
+          eyebrow: 'Understand',
+          title: 'One living picture of your plant.',
+          body: 'Material, machine, moment — linked. Ask a question, get a cited answer.',
+          tags: ['Knowledge graph', 'Cited answers'],
+        },
+        {
+          id: 'orbit', label: 'The Plant',
+          still: 'assets/orbit.webp',
+          poster: 'assets/orbit-poster.webp',
+          clip: 'assets/vid/orbit.mp4',
+          clipMobile: 'assets/vid/orbit-m.mp4',
+          posterMobile: 'assets/orbit-poster-m.webp',
+          accent: '#FF6A2B',
+          scroll: 1.6, linger: 0.4,
+          eyebrow: 'Execute',
+          title: 'See your whole operation.',
+          body: 'New understanding becomes the new standard — on the floor, next shift.',
+          tags: [],
+          cta: { primary: { label: 'Book the 10-Week Proof', href: 'https://oppr.ai' },
+                 secondary: { label: 'See how it works', href: 'https://oppr.ai' } },
+        },
+      ],
+      connectors: [
+        'assets/vid/conn1.mp4',
+        'assets/vid/conn2.mp4',
+        'assets/vid/conn3.mp4',
+        'assets/vid/conn4.mp4',
+      ],
+      connectorsMobile: [
+        'assets/vid/conn1-m.mp4',
+        'assets/vid/conn2-m.mp4',
+        'assets/vid/conn3-m.mp4',
+        'assets/vid/conn4-m.mp4',
+      ],
+    });
+  </script>
+<script src="/pill.js" defer></script></body>
+</html>

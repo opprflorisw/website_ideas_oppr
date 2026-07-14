@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oppr — website ideas</title>
+<meta name="description" content="Every version of the Oppr website and scroll-world, in one place.">
+<style>
+  :root{ --ink:#1C1F23; --soft:#6B675F; --bg:#F4F2EE; --line:#E2DED7; --orange:#FF6A2B; --azure:#3D9BE9; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+       padding:72px 24px 140px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto}
+  header{margin-bottom:56px;max-width:640px}
+  .mark{display:inline-flex;align-items:center;gap:8px;font-weight:600;letter-spacing:-.01em;margin-bottom:22px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--orange)}
+  h1{font-size:clamp(28px,4vw,40px);line-height:1.12;letter-spacing:-.025em;margin:0 0 14px;font-weight:650}
+  .lede{color:var(--soft);margin:0;font-size:17px}
+  h2{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);
+     font-weight:650;margin:48px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:16px}
+  a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);
+         border-radius:14px;padding:20px;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+  a.card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(28,31,35,.09);border-color:#CFC9C0}
+  .tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+       padding:3px 8px;border-radius:999px;margin-bottom:12px}
+  .t-world{background:rgba(255,106,43,.12);color:#C24A16}
+  .t-site{background:rgba(61,155,233,.12);color:#1F6FAF}
+  .t-arch{background:rgba(28,31,35,.07);color:var(--soft)}
+  .card h3{margin:0 0 6px;font-size:17px;letter-spacing:-.01em;font-weight:640}
+  .card p{margin:0;color:var(--soft);font-size:14px;line-height:1.5}
+  .card .meta{margin-top:12px;font-size:12px;color:#9A968F;font-family:ui-monospace,SFMono-Regular,monospace}
+  .note{margin-top:56px;padding:18px 20px;border-radius:12px;background:#EEEAE3;border:1px solid var(--line);
+        color:var(--soft);font-size:14px;max-width:760px}
+  .note b{color:var(--ink)}
+  footer{margin-top:40px;color:#9A968F;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark"><span class="dot"></span> Oppr</div>
+    <h1>Website ideas — every version, one place.</h1>
+    <p class="lede">Pick any version below, or use the floating pill at the bottom of the screen to jump between them from inside any page.</p>
+  </header>
+
+  <h2>Scroll worlds — the plant that understands itself</h2>
+  <div class="grid">
+    <a class="card" href="/versions/world-waste-mrf/">
+      <span class="tag t-world">v2 · newest</span>
+      <h3>Waste MRF walk</h3>
+      <p>A square plant walked quadrant to quadrant: tipping hall → pre-sort → automated sorting → baling. Structured as Capture · Understand · Execute.</p>
+      <div class="meta">5 scenes · 4 corner connectors</div>
+    </a>
+    <a class="card" href="/versions/world-pvc/">
+      <span class="tag t-world">v1</span>
+      <h3>PVC plant walk</h3>
+      <p>The first scroll-world: one continuous line — intake, extrusion, end of line, the understanding corner, and a 360° orbit of the plant.</p>
+      <div class="meta">5 scenes · 4 connectors</div>
+    </a>
+  </div>
+
+  <h2>Website — spine versions</h2>
+  <div class="grid">
+    <a class="card" href="/versions/website-v2/spine/">
+      <span class="tag t-site">B</span>
+      <h3>Spine</h3>
+      <p>Vertical spine running the length of the page, sections hanging off it.</p>
+      <div class="meta">/spine</div>
+    </a>
+    <a class="card" href="/versions/website-v2/spine2/">
+      <span class="tag t-site">C</span>
+      <h3>Spine 2</h3>
+      <p>Scene-snapped spine — the refinement pass, with a dedicated "for whom" section.</p>
+      <div class="meta">/spine2</div>
+    </a>
+    <a class="card" href="/versions/website-v2/">
+      <span class="tag t-site">A</span>
+      <h3>Home (bands)</h3>
+      <p>The classic banded layout — the baseline the spine versions were measured against.</p>
+      <div class="meta">/</div>
+    </a>
+  </div>
+
+  <h2>Website — product directions</h2>
+  <div class="grid">
+    <a class="card" href="/versions/website-v2/directions/control-room/">
+      <span class="tag t-arch">direction 1</span>
+      <h3>Control room</h3>
+      <p>The product framed as a live control room over the operation.</p>
+      <div class="meta">/directions/control-room</div>
+    </a>
+    <a class="card" href="/versions/website-v2/directions/shift-report/">
+      <span class="tag t-arch">direction 2</span>
+      <h3>Shift report</h3>
+      <p>The product framed around the artefact every plant already knows.</p>
+      <div class="meta">/directions/shift-report</div>
+    </a>
+    <a class="card" href="/versions/website-v2/directions/timeline/">
+      <span class="tag t-arch">direction 3</span>
+      <h3>Timeline</h3>
+      <p>The product framed as one continuous timeline of the operation.</p>
+      <div class="meta">/directions/timeline</div>
+    </a>
+  </div>
+
+  <h2>Website — supporting pages</h2>
+  <div class="grid">
+    <a class="card" href="/versions/website-v2/how-it-works/"><span class="tag t-site">page</span><h3>How it works</h3><p>Capture → understand → execute, explained.</p><div class="meta">/how-it-works</div></a>
+    <a class="card" href="/versions/website-v2/proof/"><span class="tag t-site">page</span><h3>Proof</h3><p>The 10-Week Proof offer.</p><div class="meta">/proof</div></a>
+    <a class="card" href="/versions/website-v2/results/"><span class="tag t-site">page</span><h3>Results</h3><p>What plants got out of it.</p><div class="meta">/results</div></a>
+    <a class="card" href="/versions/website-v2/for-engineers/"><span class="tag t-site">page</span><h3>For engineers</h3><p>The technical story.</p><div class="meta">/for-engineers</div></a>
+    <a class="card" href="/versions/website-v2/about/"><span class="tag t-site">page</span><h3>About</h3><p>Who we are.</p><div class="meta">/about</div></a>
+  </div>
+
+  <div class="note">
+    <b>Not deployed here:</b> the legacy site (<code>oppr-website</code>) runs on Postgres and Resend, so it can't be
+    served as static files. Its source lives in the repo under <code>source/legacy-website/</code> — run it locally with
+    <code>npm run db:up && npm run dev</code>.
+  </div>
+
+  <footer>Every page carries the floating version pill — bottom centre.</footer>
+</div>
+<script src="/pill.js" defer></script>
+</body>
+</html>

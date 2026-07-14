@@ -1,0 +1,7 @@
+Thin glowing light threads rise from data sources: each thread starts exactly at its glowing source and rises unbroken straight up, ending at soft glowing nodes floating high above the equipment. Vivid orange threads start at workers' glowing devices (a phone photographing a label, a handheld held near the mouth, a tablet during an inspection round). Azure blue threads start at small glowing azure sensor pucks mounted on machines. No thread touches a wall or returns to any machine.
+
+ACT RULES — the thread behavior tells the story:
+- CAPTURE scenes: threads only RISE; the loose cloud of nodes grows scene over scene, not yet connected.
+- UNDERSTAND scenes: the nodes begin to INTERLINK, thin lateral links weaving them into one connected constellation above the machines.
+- EXECUTE scenes: exactly ONE thread DESCENDS from the constellation into a worker's glowing tablet on the floor — understanding coming back down. At the control-room annex, one thread descends into a desktop monitor.
+- FINALE (orbit): the full loop at once — rising threads from every quadrant, the interlinked constellation floating above the plant, and the descending threads at the annex and the execute point.

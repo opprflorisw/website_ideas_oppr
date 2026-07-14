@@ -1,0 +1,57 @@
+{
+  "slug": "biogas",
+  "industry": "Bio-digestion facility (household/agri feedstock to biomethane)",
+  "pitch": "The plant that understands itself — from feedstock truck to gas in the grid.",
+  "hint": "scroll to walk the plant",
+  "master": {
+    "layout": "A square plant seen from above, four process quadrants, material flowing clockwise around the perimeter. Q1 south-west: covered receiving hall with weighbridge (truck gate on the south facade). Q2 north-west: pre-treatment hall, cutaway roof. Q3 north-east: open yard with dome digester tanks and a gas holder. Q4 south-east: energy building and dispatch bay (truck gate on the south facade). A low CONTROL-ROOM ANNEX sits on the south facade BETWEEN the two truck gates, windows overlooking the halls, desks with ordinary desktop computers inside. Thin pipe and conveyor bridges carry material across quadrant boundaries.",
+    "note": "Master still is approved FIRST; quadrant stills derive from it. Threads are added at quadrant level, plus a threaded re-render of the master for the orbit finale."
+  },
+  "quadrants": [
+    {
+      "id": "receive",
+      "name": "Receiving",
+      "stations": ["truck gate with strip curtains", "weighbridge", "receiving bunker", "wheel loader feeding an intake hopper"],
+      "material_in": "feedstock truck entering through the south gate",
+      "material_out": "feedstock conveyor leaving through the wall into Q2",
+      "data_orange": ["worker with glowing tablet logging the delivery at the weighbridge", "worker speaking a voice note into a glowing handheld beside the bunker"],
+      "data_azure": ["weighbridge sensor puck", "bunker level sensor puck"],
+      "copy": { "eyebrow": "Capture", "title": "It starts at the gate.", "body": "Every load logged the moment it arrives — spoken, photographed, structured.", "tags": ["Voice", "Photos"], "accent": "#FF6A2B" }
+    },
+    {
+      "id": "pretreat",
+      "name": "Pre-treatment",
+      "stations": ["shredder", "pasteurizer tanks", "mixing tank with pumps"],
+      "material_in": "feedstock conveyor entering through the wall from Q1",
+      "material_out": "slurry pipe leaving through the wall toward the digesters in Q3",
+      "data_orange": ["operator photographing a foreign object pulled from the shredder with a glowing phone"],
+      "data_azure": ["temperature sensor puck on a pasteurizer tank", "flow sensor puck on the slurry pump"],
+      "copy": { "eyebrow": "Every signal", "title": "Machines talk. So does your team.", "body": "Sensor data and human observations flow into one stream — even from your oldest machine.", "tags": ["OCR on HMIs", "Sensors"], "accent": "#3D9BE9" }
+    },
+    {
+      "id": "digest",
+      "name": "Digestion",
+      "stations": ["two dome digester tanks", "gas holder", "pipework racks"],
+      "material_in": "slurry pipe entering the yard from Q2",
+      "material_out": "biogas pipe and digestate pipe leaving toward Q4",
+      "data_orange": ["operator on an inspection round holding a glowing tablet at the digester stairs"],
+      "data_azure": ["gas flow sensor puck on the biogas pipe", "temperature sensor puck on a digester dome"],
+      "copy": { "eyebrow": "Traceable", "title": "Forty days in the tank, nothing lost.", "body": "Every batch keeps its trail — what went in, how it ran, what came out.", "tags": ["Batch trail", "Run history"], "accent": "#FF6A2B" }
+    },
+    {
+      "id": "dispatch",
+      "name": "Energy & dispatch",
+      "stations": ["CHP engine / gas upgrading skid", "digestate press", "loadout bay"],
+      "material_in": "biogas and digestate pipes entering from Q3",
+      "material_out": "FINISHED: gas-to-grid pipe leaving the building, digestate truck exiting through the south gate",
+      "data_orange": ["technician photographing the engine HMI panel with a glowing phone"],
+      "data_azure": ["energy meter sensor puck on the CHP", "weight sensor puck at the loadout"],
+      "copy": { "eyebrow": "Understand", "title": "One living picture of your plant.", "body": "Material, machine, moment — linked. Ask a question, get a cited answer.", "tags": ["Knowledge graph", "Cited answers"], "accent": "#3D9BE9" }
+    }
+  ],
+  "orbit": {
+    "content": "After Q4 the camera turns the last corner onto the front facade and glides past the control-room annex (desks, desktop monitors behind the windows, ONE thread descending from above into a monitor), then rises and orbits the whole square plant: threads from all four quadrants rising and interlinking into one constellation floating above the plant, the full circuit visible — truck in at one gate, around the quadrants, truck out at the other.",
+    "copy": { "eyebrow": "Execute", "title": "See your whole operation.", "body": "New understanding becomes the new standard — on the floor, next shift.", "accent": "#FF6A2B",
+      "cta": { "primary": { "label": "Book the 10-Week Proof", "href": "https://oppr.ai" }, "secondary": { "label": "See how it works", "href": "https://oppr.ai" } } }
+  }
+}

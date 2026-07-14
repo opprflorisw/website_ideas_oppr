@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Oppr — the plant that understands itself</title>
+  <meta name="description" content="Scroll to walk a waste separation plant where every photo, voice note and sensor reading becomes one living picture of the operation — captured, understood, executed." />
+  <style>
+    :root, .sw-root {
+      --sw-bg: #F4F2EE;
+      --sw-ink: #1C1F23;
+      --sw-ink-soft: #6B675F;
+      --sw-accent: #FF6A2B;
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world">
+    <section data-sw-seo>
+      <h1>The plant that understands itself.</h1>
+      <p>Oppr turns every photo, voice note and sensor reading on your floor into one living, linked picture of the operation — captured, understood, executed. Walk the line and watch it happen.</p>
+      <h2>Capture — It starts at the tip.</h2>
+      <p>Every load logged the moment it lands — spoken, photographed, structured.</p>
+      <h2>Capture — Machines talk. So does your team.</h2>
+      <p>Voice notes from the sort cabin, signals from the belts — one growing stream.</p>
+      <h2>Understand — The morning's photo meets the purity dip.</h2>
+      <p>Material, machine, moment — linked. The suspect load from the tip explains the sorter's numbers.</p>
+      <h2>Execute — The answer comes back to the floor.</h2>
+      <p>An updated standard on the operator's tablet — checked, baled, shipped.</p>
+      <h2>Capture · Understand · Execute — See your whole operation.</h2>
+      <p>Every shift captures, the plant understands, the floor executes — one living loop.</p>
+      <p><a href="https://oppr.ai">Book the 10-Week Proof</a> · <a href="https://oppr.ai">See how it works</a></p>
+    </section>
+  </div>
+
+  <script src="scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'Oppr', href: '#top' },
+      cta: { label: 'Book the 10-Week Proof', href: 'https://oppr.ai' },
+      hint: 'scroll to walk the plant',
+      diveScroll: 1.3,
+      crossfade: 0.18,
+      sections: [
+        {
+          id: 'tipping', label: 'Tipping hall',
+          still: 'assets/scene1.webp',
+          poster: 'assets/scene1-poster.webp',
+          posterMobile: 'assets/scene1-poster-m.webp',
+          clip: 'assets/vid/scene1.mp4',
+          clipMobile: 'assets/vid/scene1-m.mp4',
+          accent: '#FF6A2B',
+          eyebrow: 'Capture',
+          title: 'It starts at the tip.',
+          body: 'Every load logged the moment it lands — spoken, photographed, structured.',
+          tags: ['Photos', 'Voice'],
+        },
+        {
+          id: 'presort', label: 'Pre-sort',
+          still: 'assets/scene2.webp',
+          poster: 'assets/scene2-poster.webp',
+          posterMobile: 'assets/scene2-poster-m.webp',
+          clip: 'assets/vid/scene2.mp4',
+          clipMobile: 'assets/vid/scene2-m.mp4',
+          accent: '#3D9BE9',
+          scroll: 1.6, linger: 0.45,
+          eyebrow: 'Capture',
+          title: 'Machines talk. So does your team.',
+          body: 'Voice notes from the sort cabin, signals from the belts — one growing stream.',
+          tags: ['Voice notes', 'Sensors'],
+        },
+        {
+          id: 'sorting', label: 'Sorting',
+          still: 'assets/scene3.webp',
+          poster: 'assets/scene3-poster.webp',
+          posterMobile: 'assets/scene3-poster-m.webp',
+          clip: 'assets/vid/scene3.mp4',
+          clipMobile: 'assets/vid/scene3-m.mp4',
+          accent: '#FF6A2B',
+          scroll: 1.8, linger: 0.5,
+          eyebrow: 'Understand',
+          title: "The morning's photo meets the purity dip.",
+          body: 'Material, machine, moment — linked. The suspect load from the tip explains the sorter’s numbers.',
+          tags: ['Knowledge graph', 'Root cause'],
+        },
+        {
+          id: 'baling', label: 'Baling',
+          still: 'assets/scene4.webp',
+          poster: 'assets/scene4-poster.webp',
+          posterMobile: 'assets/scene4-poster-m.webp',
+          clip: 'assets/vid/scene4.mp4',
+          clipMobile: 'assets/vid/scene4-m.mp4',
+          accent: '#3D9BE9',
+          scroll: 1.6, linger: 0.45,
+          eyebrow: 'Execute',
+          title: 'The answer comes back to the floor.',
+          body: 'An updated standard on the operator’s tablet — checked, baled, shipped.',
+          tags: ['Instructions', 'Standards'],
+        },
+        {
+          id: 'plant', label: 'The Plant',
+          still: 'assets/scene5.webp',
+          poster: 'assets/scene5-poster.webp',
+          posterMobile: 'assets/scene5-poster-m.webp',
+          clip: 'assets/vid/scene5.mp4',
+          clipMobile: 'assets/vid/scene5-m.mp4',
+          accent: '#FF6A2B',
+          scroll: 1.6, linger: 0.4,
+          eyebrow: 'Capture · Understand · Execute',
+          title: 'See your whole operation.',
+          body: 'Every shift captures, the plant understands, the floor executes — one living loop.',
+          tags: [],
+          cta: { primary: { label: 'Book the 10-Week Proof', href: 'https://oppr.ai' },
+                 secondary: { label: 'See how it works', href: 'https://oppr.ai' } },
+        },
+      ],
+      connectors: [
+        'assets/vid/conn1.mp4',
+        'assets/vid/conn2.mp4',
+        'assets/vid/conn3.mp4',
+        'assets/vid/conn4.mp4',
+      ],
+      connectorsMobile: [
+        'assets/vid/conn1-m.mp4',
+        'assets/vid/conn2-m.mp4',
+        'assets/vid/conn3-m.mp4',
+        'assets/vid/conn4-m.mp4',
+      ],
+    });
+  </script>
+<script src="/pill.js" defer></script></body>
+</html>

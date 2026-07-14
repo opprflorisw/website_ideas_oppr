@@ -1,0 +1,71 @@
+{
+  "slug": "waste-mrf",
+  "industry": "Household waste separation facility (materials recovery)",
+  "pitch": "The plant that understands itself — from collection truck to sorted bales.",
+  "hint": "scroll to walk the plant",
+  "arc": "CAPTURE (Q1, Q2) -> UNDERSTAND (Q3) -> EXECUTE (Q4) -> THE LOOP (annex + orbit). The thread grammar carries the acts: rise-only in Capture, interlinking begins at Understand, one thread descends to the floor at Execute, full loop in the finale.",
+  "master": {
+    "layout": "A square plant seen from above, four process quadrants, material flowing clockwise around the perimeter. Q1 south-west: tipping hall (truck gate on the south facade). Q2 north-west: pre-sort hall with elevated sort cabin, cutaway roof. Q3 north-east: automated sorting hall, cutaway roof. Q4 south-east: baling and dispatch bay (truck gate on the south facade). A low CONTROL-ROOM ANNEX sits on the south facade BETWEEN the two truck gates, windows overlooking the halls, desks with ordinary desktop computers inside, weighbridge in front. Enclosed conveyor bridges carry material across quadrant boundaries.",
+    "note": "Master still is approved FIRST (clean geometry, NO threads); quadrant stills derive from it and add workers, devices and threads per act. Orbit still = threaded re-render of the master."
+  },
+  "quadrants": [
+    {
+      "id": "tipping",
+      "name": "Tipping hall",
+      "act": "capture",
+      "stations": ["truck gate with strip curtains", "waste bunker", "grab crane", "feed hopper"],
+      "material_in": "collection truck tipping through the south gate",
+      "material_out": "feed conveyor rising through the wall into Q2",
+      "action": "A collection truck tips a load into the bunker. An operator at the bunker edge spots something off in the load and photographs it with a glowing tablet — the story's inciting incident: THE CONTAMINATED LOAD. The grab crane keeps feeding the hopper.",
+      "threads": "First threads of the story: one orange thread rises from the operator's tablet (the load photo), one azure from the bunker level sensor puck. A small loose cloud of nodes forms above — not yet connected.",
+      "data_orange": ["operator photographing the suspect load with a glowing tablet at the bunker edge"],
+      "data_azure": ["bunker level sensor puck"],
+      "copy": { "eyebrow": "Capture", "title": "It starts at the tip.", "body": "Every load logged the moment it lands — spoken, photographed, structured.", "tags": ["Photos", "Voice"], "accent": "#FF6A2B" }
+    },
+    {
+      "id": "presort",
+      "name": "Pre-sort",
+      "act": "capture",
+      "stations": ["bag opener", "trommel screen", "elevated manual sort cabin with two workers at the belt"],
+      "material_in": "feed conveyor entering through the wall from Q1",
+      "material_out": "sorted streams on conveyors leaving through the wall into Q3",
+      "action": "Bags burst open, the trommel turns, and in the elevated cabin two workers pull contaminants off the belt. One speaks a voice note into a glowing handheld — 'lots of film plastic in this batch' — the human observation that will pair with the machines' numbers.",
+      "threads": "The cloud grows: an orange thread rises from the sort cabin handheld, azure threads from the trommel drive and belt speed pucks. More nodes join the loose cloud — still rise-only, still unconnected.",
+      "data_orange": ["worker in the sort cabin speaking a voice note into a glowing handheld"],
+      "data_azure": ["trommel drive sensor puck", "belt speed sensor puck"],
+      "copy": { "eyebrow": "Capture", "title": "Machines talk. So does your team.", "body": "Voice notes from the sort cabin, signals from the belts — one growing stream.", "tags": ["Voice notes", "Sensors"], "accent": "#3D9BE9" }
+    },
+    {
+      "id": "sorting",
+      "name": "Automated sorting",
+      "act": "understand",
+      "stations": ["optical sorter with air jets", "ballistic separator", "overbelt magnet / eddy current"],
+      "material_in": "conveyors entering through the wall from Q2",
+      "material_out": "clean material streams leaving on conveyors toward the balers in Q4",
+      "action": "The automated hall at full tilt: air jets firing on the optical sorter, the ballistic separator shaking streams apart. The optical sorter's purity reading dips — and above the machines, the plant connects the dots: the morning's load photo, the cabin's voice note, the purity signal.",
+      "threads": "THE TURN: for the first time the nodes INTERLINK — thin lateral links weave the load-photo node, the voice-note node and the purity-sensor node into one connected constellation above the hall. Azure threads keep rising from the sorter pucks beneath it.",
+      "data_orange": ["technician at the optical sorter HMI holding a glowing tablet"],
+      "data_azure": ["purity sensor puck on the optical sorter", "throughput sensor puck on the ballistic separator"],
+      "copy": { "eyebrow": "Understand", "title": "The morning's photo meets the purity dip.", "body": "Material, machine, moment — linked. The suspect load from the tip explains the sorter's numbers.", "tags": ["Knowledge graph", "Root cause"], "accent": "#FF6A2B" }
+    },
+    {
+      "id": "baling",
+      "name": "Baling & dispatch",
+      "act": "execute",
+      "stations": ["channel baler", "bale stacks sorted by material", "forklift", "loadout bay"],
+      "material_in": "material streams entering from Q3",
+      "material_out": "FINISHED: forklift loads bales onto a truck exiting through the south gate",
+      "action": "Understanding comes back to the floor: the loadout operator's tablet glows as the updated instruction arrives — extra check on this run's bales. The operator scans a bale tag, the forklift loads the truck, and it pulls out through the gate: finished product, closed case.",
+      "threads": "ONE thread DESCENDS from the constellation into the operator's glowing tablet — the first downward thread of the story. The bale-tag scan starts a fresh orange thread rising: the loop never stops. Azure from the baler weight puck.",
+      "data_orange": ["loadout operator receiving an instruction and scanning a bale tag with a glowing tablet"],
+      "data_azure": ["bale weight sensor puck on the baler"],
+      "copy": { "eyebrow": "Execute", "title": "The answer comes back to the floor.", "body": "An updated standard on the operator's tablet — checked, baled, shipped.", "tags": ["Instructions", "Standards"], "accent": "#3D9BE9" }
+    }
+  ],
+  "orbit": {
+    "act": "loop",
+    "content": "After Q4 the camera turns the last corner onto the front facade and glides past the control-room annex — desks and monitors behind the windows, ONE thread descending from the constellation into a monitor — then rises and orbits the whole square plant. The full loop in one picture: orange and azure threads rising from all four quadrants, the interlinked constellation floating above the plant, descending threads at the annex and the Q4 tablet, the circuit visible below — truck in at one gate, around the quadrants, truck out at the other.",
+    "copy": { "eyebrow": "Capture · Understand · Execute", "title": "See your whole operation.", "body": "Every shift captures, the plant understands, the floor executes — one living loop.", "accent": "#FF6A2B",
+      "cta": { "primary": { "label": "Book the 10-Week Proof", "href": "https://oppr.ai" }, "secondary": { "label": "See how it works", "href": "https://oppr.ai" } } }
+  }
+}
